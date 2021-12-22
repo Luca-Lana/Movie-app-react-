@@ -1,12 +1,19 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
+import MovieListPage from './components/MovieListPage';
+import MovieDetailPage from './components/MovieDetailPage';
+import { BrowserRouter, Switch, Route } from 'react-router-dom'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter>
+      <Switch>
+        <Route exact path = "/" component = { MovieListPage }></Route>
+        <Route path = '/:imdbId' component={ MovieDetailPage }/>
+      </Switch>
+    </BrowserRouter>
   </React.StrictMode>,
   document.getElementById('root')
 );

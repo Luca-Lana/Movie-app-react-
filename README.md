@@ -1,3 +1,7 @@
+# About Project
+
+This project was created to study, the project consists of a react application that you can search a movie and see all details about it.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
